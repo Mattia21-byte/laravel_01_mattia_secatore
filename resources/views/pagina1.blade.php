@@ -1,85 +1,43 @@
 <!doctype html>
-<html lang="en">
-  <head>
+<html lang="it">
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Homepage</title>
-    
-    <!-- //BOOTSTRAP// -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Pagina 1</title>
 
-    <!-- //CSS// -->
-    <link rel="stylesheet" href="/css/style.css"/>
-  </head>
-  
-  
-  <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary mb-4 text-center ">
-  <div class="container-fluid custom-nav">
-    <a class="navbar-brand active fw-bold" href="/">Home</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active fw-bold" aria-current="page" href="/pagina1">Pagina1</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active fw-bold" href="/pagina2">Pagina2</a>
-        </li>
-        
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg custom-nav">
+    <div class="container">
+        <a class="navbar-brand fw-bold text-white" href="/">Selfwork Laravel</a>
+
+        <div class="navbar-nav">
+            <a class="nav-link text-white fw-bold" href="/">Home</a>
+            <a class="nav-link text-white fw-bold" href="/pagina1">Pagina 1</a>
+            <a class="nav-link text-white fw-bold" href="/pagina2">Pagina 2</a>
+        </div>
     </div>
-  </div>
 </nav>
-  
-<div class="container-fluid">
-    
-    <h2 class="display-4 text-center p-4 fw-bold text-dark">Pagina 1</h2>
-    
-    <p class="lead text-center">In questa pagina trovi informazioni sulla Pagina 1.</p>
 
-    <button class="btn btn-success">
-      Pulsante 1
-    </button>
+<main class="container my-5">
+    <div class="card custom-card shadow">
+        <div class="card-body">
+            <h1 class="fw-bold">Pagina 1</h1>
+            <p>
+                In questa pagina mostro il collegamento tra una rotta Laravel e una view Blade.
+                La rotta <strong>/pagina1</strong> restituisce questa pagina.
+            </p>
 
-  </div>
+            <a href="/" class="btn btn-secondary">Torna alla Homepage</a>
+            <a href="/pagina2" class="btn btn-primary">Vai alla Pagina 2</a>
+        </div>
+    </div>
+</main>
 
-
-    
-    
-    
-    
-    
-    
-    
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  </html>
+</html>
